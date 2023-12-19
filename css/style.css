@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/*font-family: 'Outfit', sans-serif;*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --color1: hsl(215, 51%, 70%);
+    --color2: hsl(178, 100%, 50%);
+    --colorBgMain: hsl(217, 54%, 11%);
+    --colorBgCard: hsl(216, 50%, 16%);
+    --colorLine: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--colorBgMain);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+
+.estiloBotao {
+    background-color: var(--color2);
+    border-radius: 10px;
+    border: none;
+    padding: 1%;
+    cursor: pointer;
+    width: 7rem;
+}
+
+.estiloBotao:hover {
+    opacity: 0.8;
+}
+
+.estiloInput {
+    background-color: var(--colorBgCard);
+    border-radius: 10px;
+    border: none;
+    padding: 0.8%;
+    color: var(--white);
+}
+
+#caixaConteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorBgCard);
+    border-radius: 10px;
+    box-shadow: 0px 0px 200px rgba(6, 3, 33, 1);
+    min-width: 15rem;
+    width: 50%;
+    height: 15rem;
+    overflow: auto;
+    /* Adiciona barras de rolagem caso o conteúdo seja muito grande */
+    padding: 10px;
+    color: var(--white);
+}
+
+#botoes {
+    display: flex;
+    justify-content: space-between;
+    width: 15rem;
+    height: 3rem;
+    order: 1;
+
+}
+p {
+   font-size: 8rem; 
+
+}
+h1 {
+    color: var(--white);
+    font-size: 1.3rem;
+}
